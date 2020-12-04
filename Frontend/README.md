@@ -25,7 +25,7 @@ Pré-requisitos:
 - Yarn/Npm
 - [Back-end](https://github.com/julio0345/challenge/backend) da aplicação rodando
 
-Instalar as bibliotecas de terceiros  acessando a pasta 'Frontend' rodando no terminal:
+Instalar as bibliotecas de terceiros rodando no terminal:
 > npm install
 OU
 > yarn
