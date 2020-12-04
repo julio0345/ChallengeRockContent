@@ -18,18 +18,19 @@ export default class ButtonLike extends React.Component {
 
   addLike = async () => {
     try {
-      const startDate = new Date().toUTCString();
+      const {data} = await api.put('Article/Like/1');
+      this.setState({likes: data.like});
+      
+      // const startDate = new Date().toUTCString();
 
-      console.log('Start: ' + startDate);
-      for (let index = 0; index <= 75; index++) {
-        const {data} = await api.put('Article/Like/1');
-        this.setState({
-          likes: data.like
-        });
-      }
+      // console.log('Start: ' + startDate);
+      // for (let index = 0; index <= 100; index++) {
+      //   const {data} = await api.put('Article/Like/1');
+      //   this.setState({likes: data.like});
+      // }
 
-      const endDate = new Date().toUTCString();
-      console.log('Finish: ' + endDate);
+      // const endDate = new Date().toUTCString();
+      // console.log('Finish: ' + endDate);
     } catch (error) {
       console.log(error)
     }
