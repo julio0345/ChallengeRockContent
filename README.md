@@ -1,7 +1,7 @@
 <h1 align="center">
   Challenge Rock Content
   <br /><br />
-  <img src="./src/assets/app.png" width="400"/>
+  <img src="./Frontend/src/assets/app.png" width="400"/>
 </h1>
 
 <p align="center">
